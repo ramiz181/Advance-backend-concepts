@@ -1,0 +1,19 @@
+
+
+Circuit breakers:
+
+    1) ==> Closed (normal state)
+        - request flows normally 
+        - failure detectd  
+
+    2) ==> open (failure detected)
+        - too many failures/timeout
+        - calls immediately block temporary
+
+    3) ==> half-open (test state)
+        - after cooldown
+        - allow limited request
+        - if
+             success ==> Circuit breakers closes again
+             failes ==> Circuit breakers opens again
+        
