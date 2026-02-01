@@ -4,7 +4,7 @@ Circuit breakers:
 
     1) ==> Closed (normal state)
         - request flows normally 
-        - failure detectd  
+        - failure detected  
 
     2) ==> open (failure detected)
         - too many failures/timeout
@@ -15,11 +15,11 @@ Circuit breakers:
         - allow limited request
         - if
              success ==> Circuit breakers closes again
-             failes ==> Circuit breakers opens again
+             fail ==> Circuit breakers opens again
 
         
 Advantage:
     Enable graceful degradation
-        def: design a software in such a way that it continues functioning at a low performance rather than completely shots the system down
-            e.g : 
+        def: design a software in such a way that it continues functioning at a low performance rather than completely shuts the system down
+            e.g. : 
                 in streaming services/application, when internet bandwidth is low, the service reduce the quality instead of pausing the entire stream
