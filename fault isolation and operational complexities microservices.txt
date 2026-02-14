@@ -1,6 +1,6 @@
 microservices strength:
 	- fault isolation
-		when 1 service breaks it does not the complete system
+		when 1 service breaks it does not break the entire system
 
 microservices weakness:
 	- operational complexities
