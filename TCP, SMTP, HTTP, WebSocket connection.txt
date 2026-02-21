@@ -14,3 +14,21 @@ TCP provides:
     - guaranteed delivery
     - flow control
     - connection persistency (for WebSocekts)
+
+
+HTTP:
+    HTTP defines the rules of communication between browser and server (requests, responses, headers).
+
+
+SMTP provides:
+    1. Message Submission
+            => Your app → Mail server
+            => (Example: Node.js → Gmail SMTP)
+
+    2. Server-to-Server Email Transfer
+            => mail server -> recipient server
+
+
+Why do we need SMTP?
+
+    email works using specilized protocol and SMTP is sending engine for emails
