@@ -1,0 +1,16 @@
+
+Protocols itself defines:
+    - how data is formatted, transmitted
+    - who send what and when
+
+
+TCP is the transport layer for all these protocols
+
+
+SMTP, HTTP, WebSocekts runs on top of TCP
+
+TCP provides:
+    - ordered delivery
+    - guaranteed delivery
+    - flow control
+    - connection persistency (for WebSocekts)
