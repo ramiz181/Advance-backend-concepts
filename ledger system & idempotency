@@ -1,0 +1,12 @@
+ledger 
+    register (database in case of bank transaction system) where we maintain the record/history of every single transaction
+        e.g 100 debit --- 200 credit
+
+in bank systems - balance is not hard coded or calculate directly, it always calculates from ledger entries
+
+
+Ledger entries:
+
+Account	    Type	    Amount
+A	        Debit	    -100
+B	        Credit	    +100
