@@ -1,0 +1,25 @@
+ledger 
+    register (database in case of bank transaction system) where we maintain the record/history of every single transaction
+        e.g 100 debit --- 200 credit
+    
+    in banking - ledger systems are immutable, auditable 
+
+in bank systems - balance is not hard coded or calculate directly, it always calculates from ledger entries
+
+
+Ledger entries:
+Transfer $100 from A to B
+Account	    Type	    Amount
+A	        Debit	    -100
+B	        Credit	    +100
+
+.
+.
+.
+.
+.
+.
+
+Idempotency:
+    doing the same operation multiple times will just give you the same/single result
+    e.g sent $100 to someone and clicking on 'transfer' button multiple times due to network lose will not create mutiple transaction....
