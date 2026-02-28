@@ -23,3 +23,5 @@ B	        Credit	    +100
 Idempotency:
     doing the same operation multiple times will just give you the same/single result
     e.g sent $100 to someone and clicking on 'transfer' button multiple times due to network lose will not create mutiple transaction....
+
+Idempotency key is unique for every transaction - to identify the transaction request either its the same transaction or different
