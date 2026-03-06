@@ -1,0 +1,35 @@
+aggregation pipeline:
+    => framework, use to transform document through multiple stages, apply queries (find, filter, match, sumResults, etc), and generate the aggregated results
+
+
+Think of it like:
+    - data/document enters as a collection
+    - each stage transforms, filter, group the data
+    - produce the aggregated result
+    - each stage's output become the input for next stage
+
+    Collection → Stage1 → Stage2 → Stage3 → Final Result
+
+
+Core idea:
+    == as mongoDB is NoSQL, we can still join documents using $lookup query in aggregation pipeline
+    == instead of pulling raw data to the application server:
+        - data processing happens close/near to the data
+
+
+
+Use cases: 
+    - can use to compute Account balance using ledger architecture
+            ledger entries:
+                credit: +500
+                debit: -200
+                credit: +100
+    
+    - Search Filtering APIs (e-commerce products)
+
+
+Summary:
+Aggregation pipeline in MongoDB:
+    - Processes documents through multiple stages
+    - Performs filtering, grouping, transformations, joins
+    - Used for analytics, reporting, dashboards, ledger calculations, APIs
