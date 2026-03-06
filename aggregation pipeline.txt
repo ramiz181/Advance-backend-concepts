@@ -1,5 +1,5 @@
 aggregation pipeline:
-    => framework, use to transform document through multiple stages, apply queries (find, filter, match, sumResults, etc), and generate the aggregated results
+    => framework, use to transform document through multiple stages, apply queries (find, filter, match, sumResults, etc), and generate the aggregated results (summarized or combined result)
 
 
 Think of it like:
