@@ -8,5 +8,11 @@ mongoDB transactions:
         OP2 - send emails to each emails
         OP3 - mark sent emails email as 'SENT'
         }
-        
+
         if OP2 fails by any cause...and we hit the API again it will duplicate the emails...that's why we revert the operations
+
+
+A = either all operations should be executed or none of them should be executed
+C = whenever the transaction finishes the DB should remain valid and follow all integrity rules (constraints, accurate, etc)
+I = if multiple transactions run at the same time, they should not interfere with each other...each transaction should behave as if it is running alone.
+D = once a transaction is committed, the data remains saved permanently, even if the system crashes
