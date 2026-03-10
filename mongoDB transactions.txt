@@ -1,0 +1,12 @@
+
+mongoDB transactions:
+    we create a session of multiple operations and say, if any of this operation fail...revert the all operations
+    e.g
+        single API doing all 3 operations
+        {
+        OP1 - add leads data in google doc
+        OP2 - send emails to each emails
+        OP3 - mark sent emails email as 'SENT'
+        }
+        
+        if OP2 fails by any cause...and we hit the API again it will duplicate the emails...that's why we revert the operations
